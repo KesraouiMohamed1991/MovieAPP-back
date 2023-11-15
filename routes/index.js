@@ -1,9 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const fetch = require('node-fetch');
-require('dotenv').config();
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = '9831f50ad5cd04d6abb719d0dcb9603b';
 const MOVIE_API_URL = 'https://api.themoviedb.org/3/movie/popular';
 
 router.get("/movies", async (req, res) => {
